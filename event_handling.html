@@ -1,0 +1,23 @@
+<html>
+<body>
+<div class="a" id="a">
+<img src="taj.jpg" id="image" height="300" width="300"><br><br>
+<h1 id="text1">Taj Mahal,Agra</h1>
+<h1 id="text2">The Colossem,Rome</h1>
+</div>
+<script>documnet.getElementsById("a").addEventlistener("mouseover",ab);
+document.getElementsById("a").addEventListener("mouseout",bc);
+function ab(){
+document.getElemntById('image').src="colossem.jpeg";
+document.getElementById('text1').style.display="none";
+document.getElementById('text2').style.display="block";
+}
+function bc()
+{document.getElementById('image').src="taj.jpeg";
+document.getElementById('text1').src="block";
+document.getElementById('text2').src="none";
+}
+</script>
+</body>
+</html>
+
